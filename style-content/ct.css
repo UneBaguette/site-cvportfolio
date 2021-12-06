@@ -19,11 +19,6 @@ body {
     background-position: top;
 }
 
-
-header {
-    background-color: #A53F34;
-}
-
 header h1 {
     display: inline-block;
     justify-content: left;
