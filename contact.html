@@ -10,38 +10,45 @@
     <title>Contact</title>
 </head>
 <body>
+    <!-- Header et Navbar -->
     <header>
         <nav>
             <ul>
+                <!-- Boutons de navigations -->
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="reseaux.html">Mes Réseaux</a></li>
             </ul>
         </nav>
     </header>
-
+    <!-- Main et Formulaire de contact -->
     <main>
+        <!-- Formulaire de Contact -->
         <form id="ct-form" action="https://formspree.io/f/mgedewlz" method="POST">
             <h2>Formulaire de contact</h2>
+            <!-- Email -->
             <label>
                 Email :
             </label>
             <input id="mail" type="email" name="email" />
+            <!-- Message -->
             <label>
                 Message :
             </label>
             <input id="txt" type="message" name="message" />
+            <!-- Envoyer -->
             <button id="btn-form">
                 Envoyer
             </button>
             <p id="form-status"></p>
           </form>
     </main>
-    
+    <!-- Footer avec texte -->
     <footer>
         <div>
             <span>2021 &copy; lesloulous</span>
         </div>
     </footer>
+    <!-- Script pour le formulaire -->
     <script>
         var form = document.getElementById("ct-form");
         async function handleSubmit(event) {
