@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    background: url(../img-content/background1.jpg) scroll;
+    background: url(../img-content/background1.webp) scroll;
     background-size: 200rem;
     background-position: top;
 }
