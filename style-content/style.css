@@ -50,6 +50,7 @@ ul li a {
     display: flex;
     text-decoration: none;
     color: #000000;
+    transition: 200ms;
 }
 
 ul li a:hover {
@@ -112,6 +113,7 @@ main h2 {
     background-color: #FFFFFF;
     justify-content: center;
     padding: 25px;
+    box-shadow: 0px 2px 8px #12121267;
 }
 
 .section-s .s {
@@ -179,10 +181,15 @@ main h2 {
 }
 
 .section-proj {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    max-width: 2500px;
+    grid-template-columns: repeat(3, 1fr);
+    gap:60px;
 }
 
 .section-proj h3 {
@@ -194,13 +201,26 @@ main h2 {
 .projects {
     padding: 20px;
     max-width: 80%;
-    display: grid;
 }
 
 .projects a {
-    text-decoration: none;
+    text-decoration: underline 2px;
     color: #000000;
     font-size: 30px;
+    transition: 150ms;
+}
+
+.projects a:hover {
+    color: #FF0000; 
+}
+
+.projects .proj {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
 }
 
 
