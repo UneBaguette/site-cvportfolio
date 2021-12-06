@@ -127,3 +127,12 @@ footer span {
 }
 
 /* FIN FOOTER */
+
+@media screen and (max-height: 680px) {
+    .section-net {
+        flex-direction: row;
+    }
+    .section-net div {
+        padding: 35px;
+    }
+}

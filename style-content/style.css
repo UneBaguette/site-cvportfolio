@@ -87,7 +87,7 @@ main h2 {
     justify-content: center;
     font-size: 80px;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: underline 4px;
     padding: 10px;
     margin: 5px auto;
 }
@@ -107,14 +107,14 @@ main h2 {
     justify-content: left;
 }
 
-.section-skill {
+.section-s {
     display: flex;
     background-color: #FFFFFF;
     justify-content: center;
-    padding: 20px;
+    padding: 25px;
 }
 
-.section-skill .skill-1 {
+.section-s .s {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,31 +122,32 @@ main h2 {
     width: 900px;
 }
 
-.section-skill .skill-1 h3 {
+.section-s .s h3 {
     display: flex;
     justify-content: center;
+    text-decoration: underline 3px;
     font-size: 50px;
-    padding: 10px;
+    padding: 5px;
     text-shadow: 0px 5px 8px #909090;
 }
 
-.section-skill .skill-1 img {
+.section-s .s img {
     width: 100px;
     display: flex;
     padding: 10px;
     justify-content: space-evenly;
 }
 
+.section-s .s h4 {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
 .logos {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-}
-
-.section-skill .skill-1 h4 {
-    font-size: 25px;
-    text-align: center;
-    padding: 10px;
 }
 
 .download-button {
@@ -177,6 +178,31 @@ main h2 {
 	margin-top: 2px;
 }
 
+.section-proj {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-proj h3 {
+    font-size: 50px;
+    padding: 30px;
+    text-decoration: underline 3px;
+}
+
+.projects {
+    padding: 20px;
+    max-width: 80%;
+    display: grid;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+}
+
 
 /* FOOTER */
 
@@ -203,33 +229,3 @@ footer span {
 }
 
 /* FIN FOOTER */
-
-
-/* @media screen and (max-width: 831px) {
-    .container {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .container img {
-        padding: 10px;
-        border-radius: 10px;
-        min-width: 350px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    main h2 {
-        font-size: 60px;
-    }
-    .container h3 {
-        font-size: 45px;
-    }
-    .container span {
-        font-size: 25px;
-        padding: 5px;
-    }
-    .container img {
-        min-width: 250px;
-    }
-} */
