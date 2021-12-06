@@ -1,6 +1,6 @@
 # Site CV/Portfolio
 
-## Mon portfolio et cv dans un page HTML avec du CSS
+## Mon portfolio et cv dans une page HTML avec du CSS
 
 <p>Ce site inclus trois pages, la page principale, la page de mes réseaux et la page pour me contacter</p>
 
