@@ -147,7 +147,7 @@ footer span {
 /* FIN FOOTER */
 
 
-@media screen and (max-width: 831px) {
+/* @media screen and (max-width: 831px) {
     .container {
         justify-content: center;
         align-items: center;
@@ -174,4 +174,4 @@ footer span {
     .container img {
         min-width: 250px;
     }
-}
+} */
