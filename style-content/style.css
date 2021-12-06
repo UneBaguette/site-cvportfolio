@@ -197,11 +197,12 @@ main h2 {
     position: relative;
     display: grid;
     width: 80%;
+    padding-bottom: 30px;
     height: auto;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap:60px;
+    grid-template-rows: repeat(2, 1fr);
+    gap:20px;
 }
 
 .projects a {
@@ -222,6 +223,24 @@ main h2 {
     padding: 20px;
     border: 2px solid #000000;
     background-color: #FFFFFF;
+}
+
+.proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj img {
+    display: flex;
+    padding: 20px;
+    width: 50px;
 }
 
 
