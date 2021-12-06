@@ -78,6 +78,7 @@ main form {
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
     padding: 60px;
     border: 2px solid #90909078;
 }
@@ -119,7 +120,7 @@ footer {
     background-color: #D41000;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    
 }
 
 footer nav {
@@ -128,8 +129,12 @@ footer nav {
     border-radius: 5px;
 }
 
+footer div {
+    margin-top: 23px;
+}
+
 footer span {
-    font-size: 15px;
+    font-size: 13px;
     display: flex;
 }
 

@@ -180,27 +180,28 @@ main h2 {
 	margin-top: 2px;
 }
 
-.section-proj {
-    position: relative;
-    display: grid;
-    justify-content: center;
-    width: 80%;
-    height: auto;
-    margin: 30px auto;
-    max-width: 2500px;
-    grid-template-columns: repeat(3, 1fr);
-    gap:60px;
-}
+/* .section-proj {
+    
+} */
 
 .section-proj h3 {
-    font-size: 50px;
+    font-size: 70px;
+    text-align: center;
     padding: 30px;
     text-decoration: underline 3px;
 }
 
 .projects {
-    padding: 20px;
+    min-width: 50%;
     max-width: 80%;
+    position: relative;
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:60px;
 }
 
 .projects a {
@@ -230,23 +231,47 @@ footer {
     background-color: #D41000;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 footer nav {
+    margin: 10px 20px;
     display: flex;
     justify-content: right;
     border-radius: 5px;
+    transition: 150ms;
 }
 
 footer nav a {
     padding: 5px;
     text-decoration: none;
     color: black;
+    transition: 150ms;
 }
 
-footer span {
-    font-size: 15px;
+footer nav:hover {
+    background-color: #000000;
+}
+
+footer nav a:hover {
+    color: #FFFFFF;
+}
+
+footer nav span {
+    padding: 5px;
+}
+
+footer div span {
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    position: absolute;
+    font-size: 13px;
+    display: flex;
+    justify-content: end;
+}
+
+footer div {
+    position:relative;
     display: flex;
 }
 
