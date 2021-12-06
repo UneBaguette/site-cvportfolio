@@ -114,7 +114,8 @@ main h2 {
 .container img {
     display: flex;
     object-fit: cover;
-    width: 500px;
+    height: auto;
+    width: 600px;
     justify-content: left;
 }
 
