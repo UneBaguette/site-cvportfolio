@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
+/* Elements du site */
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -18,6 +20,8 @@ body {
     background-size: 200rem;
     background-position: top;
 }
+
+/* Header, titre et boutons de nav */
 
 header h1 {
     display: inline-block;
@@ -62,6 +66,12 @@ ul li a {
 ul li a:hover {
     color: #FF0000;
 }
+
+/* FIN HEADER */
+
+/* DEBUT MAIN */
+
+/* Fomulaire de contact */
 
 main {
     height: 100%;
@@ -114,6 +124,8 @@ form label {
     padding: 10px;
 }
 
+/* FIN MAIN */
+
 /* FOOTER */
 
 footer {
@@ -139,3 +151,87 @@ footer span {
 }
 
 /* FIN FOOTER */
+
+/* Media queries */
+
+@media screen and (max-width: 635px) {
+    main form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        width: 80%;
+        max-width: 350px;
+        margin-bottom: 20px;
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    main form {
+        width: 80%;
+        max-width: 300px;
+    }
+    form h2 {
+        font-size: 35px;
+    }
+    #mail {
+        width: 350px;
+    }
+    
+    #txt {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    main form {
+        width: 80%;
+        max-width: 250px;
+    }
+    form h2 {
+        font-size: 35px;
+    }
+    #mail {
+        width: 300px;
+    }
+    
+    #txt {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    main form {
+        width: 80%;
+        max-width: 200px;
+    }
+    form h2 {
+        font-size: 35px;
+    }
+    #mail {
+        width: 250px;
+    }
+    
+    #txt {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    main form {
+        width: 80%;
+        max-width: 160px;
+    }
+    form h2 {
+        font-size: 35px;
+    }
+    #mail {
+        width: 200px;
+    }
+    
+    #txt {
+        width: 200px;
+    }
+}

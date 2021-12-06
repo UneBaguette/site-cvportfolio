@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
+/* Element du site */
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -12,6 +14,8 @@ body {
     background-size: 250rem;
     background-position: top;
 }
+
+/* Header, titre et boutons de nav */
 
 header h1 {
     display: inline-block;
@@ -57,6 +61,10 @@ ul li a:hover {
     color: #FF0000;
 }
 
+/* FIN HEADER */
+
+/* DEBUT MAIN */
+
 main {
     padding-top: 100px;
 }
@@ -71,6 +79,8 @@ main h2 {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+/* Premier Texte avec image */
 
 .container {
     display: flex;
@@ -108,6 +118,8 @@ main h2 {
     justify-content: left;
 }
 
+/* Section skills */
+
 .section-s {
     display: flex;
     background-color: #FFFFFF;
@@ -120,6 +132,7 @@ main h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     max-width: 80%;
     width: 900px;
 }
@@ -127,6 +140,7 @@ main h2 {
 .section-s .s h3 {
     display: flex;
     justify-content: center;
+    text-align: center;
     text-decoration: underline 3px;
     font-size: 50px;
     padding: 5px;
@@ -136,8 +150,9 @@ main h2 {
 .section-s .s img {
     width: 100px;
     display: flex;
-    padding: 10px;
-    justify-content: space-evenly;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-s .s h4 {
@@ -148,9 +163,21 @@ main h2 {
 
 .logos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    display: flex;
     flex-direction: row;
 }
+
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Bouton télécharger */
 
 .download-button {
 	display: block;
@@ -180,9 +207,9 @@ main h2 {
 	margin-top: 2px;
 }
 
-/* .section-proj {
-    
-} */
+/* Section projets */
+
+/* Titres et grille */
 
 .section-proj h3 {
     font-size: 70px;
@@ -196,13 +223,13 @@ main h2 {
     max-width: 80%;
     position: relative;
     display: grid;
+    padding-bottom: 50px;
+    justify-content: center;
     width: 80%;
-    padding-bottom: 30px;
-    height: auto;
     margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap:20px;
+    grid-template-columns: repeat(auto-fill, 330px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
 }
 
 .projects a {
@@ -242,6 +269,8 @@ main h2 {
     padding: 20px;
     width: 50px;
 }
+
+/* FIN MAIN */
 
 
 /* FOOTER */
@@ -295,3 +324,72 @@ footer div {
 }
 
 /* FIN FOOTER */
+
+
+/* Media queries */
+
+@media screen and (max-width: 1158px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .container .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .container h3 {
+        font-size: 70px;
+    }
+    .container img {
+        justify-content: center;
+        display: flex;
+        object-fit: cover;
+        max-height: 500px;
+        width: 100%;
+        justify-content: left;
+    }
+}
+@media screen and (max-width: 991px) {
+    body {
+        background-size: 350rem;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .logos {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-s {
+        padding: 10px;
+    }
+    .download-button {
+        width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    body {
+        background-size: 400rem;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .section-s .s img {
+    width: 70px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    main h2 {
+        font-size: 50px;
+    }
+}

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
+/* Elements du site */
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -18,6 +20,8 @@ body {
     background-size: 200rem;
     background-position: top;
 }
+
+/* Header, titre et boutons de nav */
 
 header h1 {
     display: inline-block;
@@ -63,6 +67,10 @@ ul li a:hover {
     color: #FF0000;
 }
 
+/* FIN HEADER */
+
+/* DEBUT MAIN */
+
 main {
     height: 100%;
     margin-top: 20px;
@@ -103,6 +111,8 @@ main {
     align-items: center;
     padding: 20px;
 }
+
+/* FIN MAIN */
 
 /* FOOTER */
 
@@ -156,11 +166,22 @@ footer div {
 
 /* FIN FOOTER */
 
+/* Medias queries */
+
 @media screen and (max-height: 680px) {
     .section-net {
         flex-direction: row;
     }
     .section-net div {
         padding: 35px;
+    }
+}
+
+@media screen and (max-height: 680px) and (max-width: 510px) {
+    .section-net img {
+        width: 90px;
+    }
+    .section-net h2 {
+        font-size: 30px;
     }
 }
