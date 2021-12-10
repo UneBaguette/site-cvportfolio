@@ -132,7 +132,9 @@ footer {
     background-color: #D41000;
     display: flex;
     justify-content: space-between;
-    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer nav {
